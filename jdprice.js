@@ -19,9 +19,9 @@
 # 4. 点击商品详情页，详情页图片加载会触发脚本
 
 [rewrite_local]
-http-request ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/jd_price.js, timeout=60, tag=京东比价
+http-request ^https:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html script-path=https://raw.githubusercontent.com/boolen35/con/refs/heads/main/jdprice.js, timeout=60, tag=京东比价
 [mitm]
-hostname = in.m.jd.com
+hostname = %APPEND% in.m.jd.com
 */
 
 const consolelog = false;
